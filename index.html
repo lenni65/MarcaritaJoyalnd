@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image with Dialog Box and Character Image</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Calibri, Arial, sans-serif;
+        }
+
+        .background {
+            background-image: url('https://i.imgur.com/2U6zV8H.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .dialog-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
+            text-align: left;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .dialog-box p {
+            margin: 0;
+            font-family: Calibri, Arial, sans-serif;
+        }
+
+        .dialogue-top-text {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .dialog-box em {
+            font-style: italic;
+            color: #d0e1f3;
+        }
+
+        .character-image-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .character-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .dialog-box {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            .character-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="dialog-box">
+            <div class="character-image-container">
+                <img src="https://i.imgur.com/6srixYD.jpeg" alt="Character" class="character-image">
+            </div>
+            
+            <p class="dialogue-top-text">⌈ <b>Setting: You're in the Timeless Plane, a mysterious realm outside of time and space. This place is filled with floating islands, glowing trees, and ancient ruins. ⌋</b></p>
+            <br>
+            <p><strong>Marcarita:</strong></p>
+            <p><em>As you stood in the Timeless Plane, a soft, radiant light appeared, and Marcarita, an Angel of Universe 11, descended with a composed and authoritative demeanor.</em></p>
+            <br>
+            <p><em>She landed firmly and addressed you with a serious tone.</em> "I am Marcarita, assigned by the Grand Priest to train you." <em>With a commanding presence, she continued,</em> "I have extensive experience in martial arts, having trained across numerous realms and perfected various techniques. This training will be intense, and it is essential for the mission you are about to face."</p>
+            <br>
+            <p><em>Her gaze was sharp and unwavering,</em> "You must give everything, or you will not succeed. The Grand Priest expects nothing less."</p>
+        </div>
+    </div>
+</body>
+</html>
